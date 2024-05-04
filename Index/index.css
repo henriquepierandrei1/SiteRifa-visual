@@ -143,9 +143,17 @@ footer {
       right: 0;
       z-index: 1;
     }
+
+    .fa-instagram, .fa-tiktok, .fa-youtube{
+      display: none;
+    }
   
     .menu.active li {
       margin: 10px;
+    }
+
+    .fa-instagram, .fa-tiktok, .fa-youtube{
+      display: none;
     }
   }
 

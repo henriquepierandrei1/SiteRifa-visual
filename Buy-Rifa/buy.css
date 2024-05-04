@@ -102,9 +102,12 @@ footer {
     }
 
     .container{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
    
+    .fa-instagram, .fa-tiktok, .fa-youtube{
+      display: none;
+    }
     
 
     .nav-link:hover, .nav-link:active{

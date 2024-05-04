@@ -23,13 +23,14 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link"     href="#">Home</a>
+                    <a class="nav-link"     href="#"><i class="fa-solid fa-house" style="color: #ffffff; margin-right: 8px;"></i>Home</a>
+                    
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Adquirir Rifas</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-right: 8px;"></i>Adquirir Rifas</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Minhas Rifas</a>
+                    <a class="nav-link" href="#"><i class="fa-solid fa-ticket" style="color: #ffffff;  margin-right: 8px; "></i>Minhas Rifas</a>
                   </li>
                 </ul>
               </div>
@@ -46,25 +47,62 @@
     </header>
     <section>
         <article>
-            <div class="container" style="background-color: rgb(255, 255, 255); width: 80%; height: auto; margin: 3% auto 3% auto; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.253); border-radius: 20px; padding: 20px;">
+            <div class="container" id="cnt1" style="background-color: rgb(255, 255, 255); width: 90%; height: auto; margin: 3% auto 3% auto; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.253); border-radius: 20px; padding: 20px; display: flex; ">
                 <div class="container">
                     <img class="img-fluid" src="../img/img-moto.png">
                     <h1 style="font-family: Cabin;font-weight: bold;">Ação da XRE 300 RALLY 2023</h1>
-                    <hr>
+                    <p style="width: 80%;" class="text-break">Aproveite agora e não perca a chance de concorrer a um sorteio de uma XRE 300 2023 RALLY, ideal para te levar onde você quiser.</p>
                     <br>
-                    <div class="input-group mb-3" style="display: flex; flex-direction: column;">
-                        <div>
-                            <div style="display: flex;">
-                                <span class="input-group-text" style="background-color: rgb(39, 39, 39);color: white;">Quantidade</span>
-                                <span class="input-group-text" style="background-color: rgb(255, 205, 42);color: rgb(39, 39, 39); font-weight: bolder;">Ticket</span>
-                                <input type="number" class="form-control">
-                            </div>
-                        </div>
-                        <br>
-                        <div><button type="button" class="btn btn-success" style="width: 50%;">Comprar</button></div>
-                      </div>
-                     
+                    
                 </div>
+
+                  <div style="display: flex; width: 100%; flex-direction: column;">
+                    <div>
+                      <button class="btn" style="margin-left: 70%; width: 25%; height: 35px; background-color: rgb(0, 224, 0); position: relative;top: 10px;color: white;">Popular</button>
+                    </div>
+                      <div style="width: 100%; display: flex; justify-content: space-evenly;">
+                        <button class="btn" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: rgb(231, 231, 231); border: none; color: rgb(138, 138, 138); padding: 10px; border-radius: 10px; width: 44%;">
+                          <h1 style="color: rgb(41, 41, 41); margin: auto;">+10</h1>
+                          <p style="margin: auto;">Selecionar</p>
+                        </button>
+                        <button class="btn" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: orange; border: none; color: rgb(255, 255, 255); padding: 10px; border-radius: 10px; width: 44%;">
+                          <h1 style="color: rgb(255, 255, 255); margin: auto;">+50</h1>
+                          <p style="margin: auto;">Selecionar</p>
+                        </button>
+                      </div>
+                      <div style="width: 100%; display: flex; justify-content: space-evenly; margin-top: 1%;">
+                        
+                        <button class="btn" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: rgb(231, 231, 231); border: none; color: rgb(138, 138, 138); padding: 10px; border-radius: 10px; width: 44%;">
+                          <h1 style="color: rgb(41, 41, 41); margin: auto;">+100</h1>
+                          <p style="margin: auto;">Selecionar</p>
+                        </button>
+                        <button class="btn" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: rgb(231, 231, 231); border: none; color: rgb(138, 138, 138); padding: 10px; border-radius: 10px; width: 44%;">
+                          <h1 style="color: rgb(41, 41, 41); margin: auto;">+500</h1>
+                          <p style="margin: auto;">Selecionar</p>
+                        </button>
+                      </div>
+                  </div>
+                  <div class="input-group mb-3" style="display: flex; flex-direction: column;">
+                    <div>
+                        <div style="display: flex; margin-top: 5%;">
+                            <span class="input-group-text" style="background-color: rgb(39, 39, 39);color: white;">Quantidade</span>
+                            <span class="input-group-text" style="background-color: rgb(255, 205, 42);color: rgb(39, 39, 39); font-weight: bolder;">Ticket</span>
+                            <input type="number" class="form-control">
+                        </div>
+                    </div>
+                    <br>
+                  
+
+                  <div style="display: flex; flex-direction: column;">
+                    <div class="input-group mb-3" style="margin-top: 5px;">
+                      <span class="input-group-text">R$</span>
+                      <input type="text" class="form-control" disabled>
+                      <span class="input-group-text">,00</span>
+                    </div>
+                    <button type="button" class="btn btn-success" style="width: 50%;">Participar do Sorteio</button>
+                  </div>
+                  <hr>
+                </div> 
             </div>
         </article>
     </section>
