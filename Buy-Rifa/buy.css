@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+body {
+    margin: 0;
+    font-family: Cabin;
+}
+  
+
+.nav-link {
+    transition-property: border-bottom;
+    transition-duration: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+
+
+.nav-link:hover{
+    transition-duration: 1s;
+    border-bottom: 1px solid white;
+    
+}
+
+.slide-text {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .slide-text h1 {
+    display: inline-block;
+    animation: slide 6s infinite;
+  }
+
+ 
+
+
+  @keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-150%);
+    }
+  }
+
+
+  .freeman-regular {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  span{
+    color: orange;
+    font-weight: bold;
+  }
+
+  /* Estilos para o botão */
+  .blink-btn {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: blink 1s infinite alternate; /* Definindo a animação */
+}
+
+footer {
+  background-color: #ffda09;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+/* Animação de piscar */
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+ 
+  
+  
+  
+  @media screen and (max-width: 993px) {
+    .menu {
+      display: none;
+    }
+
+  
+    .hamburger-menu {
+      flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column-reverse;
+    }
+   
+    
+
+    .nav-link:hover, .nav-link:active{
+        transition-duration: 1s;
+        background-color: rgb(39, 39, 39);
+        padding-left: 2%;
+        border: 1px solid transparent;
+        
+    }
+
+
+  
+    .menu.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #333;
+      top: 60px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+  
+    .menu.active li {
+      margin: 10px;
+    }
+  }
+
+
+  
